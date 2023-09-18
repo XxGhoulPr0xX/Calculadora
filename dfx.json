@@ -1,7 +1,7 @@
   {
     "canisters": {
       "calculator": {
-        "main": "canisters/calculator.mo",
+        "main": "src/canisters/calculator.mo",
         "type": "motoko"
       },
       "internet_identity": {
