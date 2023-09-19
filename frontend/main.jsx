@@ -3,8 +3,11 @@ import { createRoot } from 'react-dom/client'
 import { ConnectButton, ConnectDialog, Connect2ICProvider } from '@connect2ic/react'
 import { createClient } from '@connect2ic/core'
 import { InternetIdentity } from '@connect2ic/core/providers/internet-identity'
+
 import './index.css'
 import '@connect2ic/core/style.css'
+import * as calculator from '../src/declarations/calculator'
+import Recorder from './components/Recorder'
 
 const client = createClient({
     canisters: {
@@ -33,7 +36,7 @@ createRoot(document.getElementById('root')).render(
                 </div>
             </header>
             <ConnectDialog />
-            Hello
+            <Recorder />
         </div>
     </Connect2ICProvider>,
 )
