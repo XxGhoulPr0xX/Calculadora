@@ -26,5 +26,5 @@ module.exports = {
         },
     ],
     // improves performance by ignoring node_modules
-    ignorePatterns: ['node_modules', 'bun.lockb'],
+    ignorePatterns: ['node_modules', 'bun.lockb', 'LICENSE'],
 }
