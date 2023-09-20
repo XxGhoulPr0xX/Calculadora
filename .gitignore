@@ -1,12 +1,6 @@
-# Mac OSX temporary files
-.DS_Store
-
-# dfx temporary files
+.astro
 .dfx
-
-# frontend code
-node_modules
-dist
-
-# environment variables
+.DS_Store
 .env
+dist
+node_modules
