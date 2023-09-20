@@ -5,55 +5,55 @@
     "author": "Otto G <5030059+ottodevs@users.noreply.github.com> (https://github.com/ottodevs)",
     "contributors": [
         {
-          "name": "Francisco Javier Alvarado (https://github.com/XxGhoulPr0xX)"
-  }],
+            "name": "Francisco Javier Alvarado (https://github.com/XxGhoulPr0xX)"
+        }
+    ],
     "license": "AGPL-3.0",
     "scripts": {
-      "astro": "astro",
-      "build": "astro build",
-      "commitlint": "commitlint --edit",
-      "dev": "astro dev",
-      "format": "prettier -uw '**/*.*'",
-      "lint": "eslint --fix .",
-      "prepare": "husky install",
-      "preview": "astro preview",
-      "start": "astro dev"
+        "astro": "astro",
+        "build": "astro build",
+        "commitlint": "commitlint --edit",
+        "dev": "astro dev",
+        "format": "prettier -uw '**/*.*'",
+        "lint": "eslint --fix .",
+        "prepare": "husky install",
+        "preview": "astro preview",
+        "start": "astro dev"
     },
     "dependencies": {
-      "@astrojs/tailwind": "5.0.0",
-      "astro": "3.1.0",
-      "tailwindcss": "3.0.24"
+        "@astrojs/tailwind": "5.0.0",
+        "astro": "3.1.0",
+        "tailwindcss": "3.0.24"
     },
     "husky": {
-      "hooks": {
-        "pre-commit": "bun run lint-staged",
-        "commit-msg": "bun run commitlint"
-      }
+        "hooks": {
+            "pre-commit": "bun run lint-staged",
+            "commit-msg": "bun run commitlint"
+        }
     },
     "lint-staged": {
-      "*": ["prettier -uw", "eslint --fix"]
+        "*": ["prettier -uw", "eslint --fix"]
     },
     "devDependencies": {
-      "@commitlint/cli": "17.7.1",
-      "@commitlint/config-conventional": "17.7.0",
-      "@ottodevs/prettier-plugin-taplo": "github:ottodevs/prettier-plugin-taplo",
-      "@prettier/plugin-xml": "3.2.1",
-      "@typescript-eslint/parser": "6.7.0",
-      "commitlint-config-gitmoji": "2.3.1",
-      "eslint": "8.49.0",
-      "eslint-plugin-astro": "0.29.0",
-      "eslint-plugin-jsx-a11y": "6.7.1",
-      "husky": "8.0.3",
-      "lint-staged": "14.0.1",
-      "prettier": "3.0.3",
-      "prettier-plugin-astro": "0.12.0",
-      "prettier-plugin-pkg": "0.18.0",
-      "prettier-plugin-sh": "0.13.1",
-      "typescript": "5.2.2",
-      "vite-plugin-rewrite": "^0.0.8"
+        "@commitlint/cli": "17.7.1",
+        "@commitlint/config-conventional": "17.7.0",
+        "@ottodevs/prettier-plugin-taplo": "github:ottodevs/prettier-plugin-taplo",
+        "@prettier/plugin-xml": "3.2.1",
+        "@typescript-eslint/parser": "6.7.0",
+        "commitlint-config-gitmoji": "2.3.1",
+        "eslint": "8.49.0",
+        "eslint-plugin-astro": "0.29.0",
+        "eslint-plugin-jsx-a11y": "6.7.1",
+        "husky": "8.0.3",
+        "lint-staged": "14.0.1",
+        "prettier": "3.0.3",
+        "prettier-plugin-astro": "0.12.0",
+        "prettier-plugin-pkg": "0.18.0",
+        "prettier-plugin-sh": "0.13.1",
+        "typescript": "5.2.2",
+        "vite-plugin-rewrite": "^0.0.8"
     },
     "commitlint": {
-      "extends": ["gitmoji"]
+        "extends": ["gitmoji"]
     }
-  }
-  
+}
