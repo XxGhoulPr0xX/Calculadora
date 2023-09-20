@@ -3,6 +3,7 @@
 /**
  * @typedef {Object} ExtendedOptions
  * @property {string} [$schema]
+ * @property {boolean} [astroAllowShorthand]
  */
 
 /** @type {import('prettier').Config & ExtendedOptions} */
@@ -22,5 +23,20 @@ export default {
     useTabs: false,
     tabWidth: 4,
 
-    overrides: [{ files: '*.json', options: { parser: 'json' } }],
+    // prettier-plugin-astro options
+    astroAllowShorthand: true,
+
+    plugins: [
+        'prettier-plugin-astro',
+        'prettier-plugin-pkg',
+        'prettier-plugin-sh',
+        '@ottodevs/prettier-plugin-taplo',
+        '@prettier/plugin-xml',
+    ],
+
+    overrides: [
+        { files: '*.astro', options: { parser: 'astro' } },
+        { files: ['.editorconfig', '*.toml'], options: { parser: 'taplo' } },
+        { files: '*.json', options: { parser: 'json' } },
+    ],
 }
