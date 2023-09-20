@@ -1,6 +1,0 @@
-service : {
-  Division: (nat, nat) -> (text);
-  Multiplicacion: (nat, nat) -> (nat);
-  Resta: (nat, nat) -> (nat);
-  Suma: (nat, nat) -> (nat);
-}
